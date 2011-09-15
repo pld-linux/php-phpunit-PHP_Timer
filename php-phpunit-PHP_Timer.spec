@@ -1,14 +1,14 @@
-%include	/usr/lib/rpm/macros.php
 %define		status		stable
 %define		pearname	PHP_Timer
+%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Utility class for timing
 Name:		php-phpunit-PHP_Timer
-Version:	1.0.0
+Version:	1.0.2
 Release:	1
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
-# Source0-md5:	aee6ce1de0a75bd0b914c7344a97113e
+# Source0-md5:	dd6b03e603ae4224484f5ca977fed420
 URL:		http://pear.phpunit.de/
 BuildRequires:	php-channel(pear.phpunit.de)
 BuildRequires:	php-packagexml2cl
@@ -44,3 +44,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc ChangeLog install.log
 %{php_pear_dir}/.registry/.channel.*/*.reg
 %{php_pear_dir}/PHP/Timer.php
+%dir %{php_pear_dir}/PHP/Timer
+%{php_pear_dir}/PHP/Timer/Autoload.php
