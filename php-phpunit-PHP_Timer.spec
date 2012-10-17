@@ -3,12 +3,12 @@
 %include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Utility class for timing
 Name:		php-phpunit-PHP_Timer
-Version:	1.0.2
+Version:	1.0.4
 Release:	1
 License:	BSD License
 Group:		Development/Languages/PHP
 Source0:	http://pear.phpunit.de/get/%{pearname}-%{version}.tgz
-# Source0-md5:	dd6b03e603ae4224484f5ca977fed420
+# Source0-md5:	79f555a25298f4d7b7855d3ccb53fba6
 URL:		http://pear.phpunit.de/
 BuildRequires:	php-channel(pear.phpunit.de)
 BuildRequires:	php-packagexml2cl
