@@ -1,6 +1,5 @@
 %define		status		stable
 %define		pearname	PHP_Timer
-%include	/usr/lib/rpm/macros.php
 Summary:	%{pearname} - Utility class for timing
 Name:		php-phpunit-PHP_Timer
 Version:	1.0.5
